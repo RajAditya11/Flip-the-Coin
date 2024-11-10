@@ -837,31 +837,31 @@
 
         <div class="Left-Display-Section">
             <div class="Left-Display-text">
-                <play-text id="playing-text">Choose Head or Tail !</play-text>
+                <play-text id="playing-text" >Choose Head or Tail !</play-text>
             </div>
 
             <div class="button-Section">
                 <div class="Left-Button-Section">
-                    <button onclick="chooseHead()" class="button-section-btn"> Head </button>
+                    <button onclick="playGame(`Head`)" class="button-section-btn"> Head </button>
                 </div>
 
                 <div class="Right-Button-Section">
-                    <button onclick="chooseHead()" class="button-section-btn "> Tail </button>
+                    <button onclick="playGame(`Tail`)" class="button-section-btn "> Tail </button>
                 </div>
             </div>
 
             <div class="button-click-result">
-                <h1 id="win-loose-text ">You Win/Losse.</h1>
+                <h1 id="win-loose-text"></h1>
             </div>
 
             <div class="win-loss-stats">
 
                 <div class="win-stat">
-                    <h1>Win :</h1>
+                    <h1 id="winningTotal" >Win :</h1>
                 </div>
 
                 <div class="loss-stat">
-                    <h1>Loss :</h1>
+                    <h1 id="loosingTotal">Loss :</h1>
                 </div>
             </div>
 
@@ -869,18 +869,18 @@
 
         <div class="Right-Display-Section">
 
-            <div class="tossCoin-message chewy-regular">
-                <h1> Toss the Coin !</h1>
+            <div class="tossCoin-message-box chewy-regular">
+                <h1 class="tossCoin-message"> Toss the Coin !</h1>
             </div>
             <div class="toss-coin-button-section">
-                <button onclick="tossCoin()" class="toss-coin-button"> Toss </button>
+                <button onclick="tossCoin(`decideTime`)" class="toss-coin-button"> Toss </button>
             </div>
 
 
             <div id="output-text-box">
-                <h1 class="output-text .audiowide-regular  ">You Win! / You Loose!</h1>
+                <h1 class="output-text .audiowide-regular"></h1>
             </div>
-        </div>
+        </div>x
     </div>
 
     <footer>
