@@ -226,9 +226,30 @@ body {
     height: 60px;
 }
 
-
 /*Footer Section*/
 .footer-section {
+    border-top: 2px solid slateblue;
+    background-color: #1A2130;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.upper-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+}
+
+
+.lower-footer{
     border-top: 2px solid slateblue;
     background-color: #1A2130;
     position: fixed;
@@ -259,6 +280,8 @@ body {
     justify-content: left;
     padding-left: 180px;
 }
+
+
 
 hr {
     border: 0;

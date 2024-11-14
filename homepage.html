@@ -246,10 +246,42 @@
             height: 60px;
         }
 
-
         /*Footer Section*/
         .footer-section {
             border-top: 2px solid slateblue;
+            background-color: #1A2130;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .upper-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1A2130;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #back-to-top {
+            border: 2px solid slateblue;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background-color: #1A2130;
+            transform: translateY(-50%);
+        }
+
+        .lower-footer {
             background-color: #1A2130;
             position: fixed;
             bottom: 0;
@@ -302,7 +334,8 @@
             font-weight: 400;
             font-style: normal;
         }
-        @media (min-width : 0px) and (max-width:300px){
+
+        @media (min-width : 0px) and (max-width:300px) {
             body {
                 display: flex;
                 flex-direction: column;
@@ -312,7 +345,8 @@
                 margin: 0;
                 padding: 0;
             }
-            h1{
+
+            h1 {
                 font-size: 18px;
             }
 
@@ -528,6 +562,39 @@
                 height: 30px;
             }
 
+            .upper-footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #1A2130;
+                width: 100%;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #back-to-top {
+                border: 2px solid slateblue;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                background-color: #1A2130;
+                transform: translateY(-50%);
+            }
+
+            .lower-footer {
+                background-color: #1A2130;
+                position: fixed;
+                bottom: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+            }
+
 
             /*Footer Section*/
             .footer-section {
@@ -570,7 +637,7 @@
                 font-size: 10px;
             }
         }
- 
+
 
         @media (min-width: 300px) and (max-width:560px) {
             body {
@@ -582,7 +649,8 @@
                 margin: 0;
                 padding: 0;
             }
-            h1{
+
+            h1 {
                 font-size: 26px;
             }
 
@@ -796,7 +864,38 @@
 
             /*Footer Section*/
             .footer-section {
+
                 border-top: 2px solid slateblue;
+                background-color: #1A2130;
+                position: fixed;
+                bottom: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+            }
+
+            .upper-footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #1A2130;
+                width: 100%;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .back-to-top {
+                width: 60px;
+                height: 60px;
+                background-color: #1A1A1D;
+            }
+
+            .lower-footer {
                 background-color: #1A2130;
                 position: fixed;
                 bottom: 0;
@@ -1057,22 +1156,53 @@
 
             /*Footer Section*/
             .footer-section {
-                border-top: 2px solid slateblue;
+                display: flex;
+                border-top: 4px solid slateblue;
                 background-color: #1A2130;
                 position: fixed;
                 bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .upper-footer {
+                align-items: center;
+                justify-content: center;
+                background-color: #1A2130;
+                width: 100%;
+                height: 120px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #back-to-top {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                width: 120px;
+                height: 120px;
+                background-color: #1A2130;
+                transform: translateY(-50%);
+                border: 4px solid slateblue;
+            }
+
+            .lower-footer {
+                background-color: #1A2130;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
                 height: auto;
-                box-sizing: border-box;
             }
 
             .player-detail-box {
                 width: 65%;
-                height: 40px;
+                height: 60px;
                 display: flex;
                 align-items: center;
                 justify-content: left;
@@ -1089,11 +1219,312 @@
             }
 
             .player-name {
-                font-size: 18px;
+                font-size: 28px;
             }
 
             .player-rating {
-                font-size: 18px;
+                font-size: 28px;
+            }
+        }
+
+        @media (min-width: 1800px) and (max-width: 2262px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                background-color: #6A1E55;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .Header-Section {
+                margin: 0;
+                padding: 0px 0;
+                position: relative;
+                width: 100%;
+                min-height: auto;
+                text-align: center;
+                z-index: 1000;
+                background-color: #1A1A1D;
+            }
+
+            .text-title {
+                color: #FFF7D1;
+                font-size: 180px;
+                font-family: 'audiowide', sans-serif;
+            }
+
+            .Entire-Display-Section {
+                margin: 60px;
+                margin-top: 160px;
+                margin-bottom: 0px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: calc(100%-20px);
+                height: 60vh;
+                box-sizing: border-box;
+            }
+
+            .Left-Display-Section {
+                border: 2px solid slateblue;
+                margin: 15px;
+                padding: 155px;
+                margin-right: 15px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                background-color: #1A2130;
+                width: 100%;
+                height: calc(100%-10px);
+            }
+
+            .Left-Display-text {
+                margin-bottom:40px ;
+                padding: 0px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                margin: 10px;
+                width: calc(100%-20px);
+                height: 90px;
+                background-color: #1A2130;
+                box-sizing: border-box;
+            }
+
+            #playing-text {
+                margin-bottom:60px ;
+                font-family: 'audiowide', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 100px;
+            }
+
+            .button-Section {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                border-radius: 20px;
+                margin: 150px;
+                width: calc(100%-20px);
+                height: auto;
+                background-color: #1A2130;
+                box-sizing: border-box;
+            }
+
+            .Left-Button-Section {
+                margin: 10px 5px 55px 5px;
+                width: 50%;
+                background-color: aqua;
+                height: 150px;
+            }
+
+            .Right-Button-Section {
+                margin: 10px 5px 5px 5px;
+                width: 50%;
+                background-color: aqua;
+                height: 150px;
+            }
+
+            .button-section-btn {
+                font-family: 'audiowide', sans-serif;
+                font-size: 80px;
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .button-click-result {
+                font-family: 'audiowide', sans-serif;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+            }
+
+            .win-loss-stats {
+                font-size: 80px;
+                margin: 30px 150px 30px 150px;
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                height: 150px;
+                background-color: #291fa7;
+                box-sizing: border-box;
+            }
+
+            .win-stat {
+                font-size: 80px;
+                font-family: 'audiowide', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 100%;
+                background-color: rgb(13, 132, 49);
+                box-sizing: border-box;
+            }
+
+            .loss-stat {
+                font-size: 40px;
+                font-family: 'audiowide', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                background-color: rgb(200, 62, 27);
+                width: 50%;
+                box-sizing: border-box;
+            }
+            #winningTotal , #loosingTotal{
+                font-size: 6rem;        
+            }
+
+            .Right-Display-Section {
+                font-family: 'audiowide', sans-serif;
+                border: 2px solid slateblue;
+                font-size: 1em;
+                margin: 50px 5px 50px 5px;
+                padding: 5px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                background-color: #1A2130;
+                width: 100%;
+                height: calc(100%-10px);
+                margin-bottom: 40px;
+            }
+
+            .tossCoin-message-box {
+                font-family: 'audiowide', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                margin: 60px 0px 60px 0px;
+                padding: 0px;
+                width: 100%;
+                background-color: #1A2130;
+                height: auto;
+            }
+
+            .tossCoin-message {
+                font-family: 'audiowide', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 100px;
+            }
+
+            .toss-coin-button-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 15px;
+                width: 100%;
+                height: auto;
+            }
+
+            .toss-coin-button {
+                font-family: 'audiowide', sans-serif;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                width: 50%;
+                height: 150px;
+                cursor: pointer;
+                font-size: 80px;
+            }
+
+            #output-text-box {
+                margin: 5px;
+                margin-top: 85px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                height: 150px;
+                font-size: 100px;
+            }
+
+
+            /*Footer Section*/
+            .footer-section {
+                display: flex;
+                border-top: 5px solid slateblue;
+                background-color: #1A2130;
+                position: fixed;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .upper-footer {
+                align-items: center;
+                justify-content: center;
+                background-color: #1A2130;
+                width: 100%;
+                height: 340px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #back-to-top {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                width: 340px;
+                height: 340px;
+                background-color: #1A2130;
+                transform: translateY(-50%);
+                border: 4px solid slateblue;
+            }
+
+            .lower-footer {
+                background-color: #1A2130;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+            }
+
+            .player-detail-box {
+                width: 65%;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                padding-left: 40px;
+            }
+
+            .player-rating-box {
+                width: 35%;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                padding-left: 0px;
+            }
+
+            .player-name {
+                font-size: 80px;
+            }
+
+            .player-rating {
+                font-size: 80px;
             }
         }
     </style>
@@ -1158,12 +1589,20 @@
     <footer>
         <div class="footer-section">
 
-            <div class="player-detail-box">
-                <h1 class="player-name">Player Name</h1>
+            <div class="upper-footer">
+                <div id="back-to-top">
+
+                </div>
             </div>
 
-            <div class="player-rating-box">
-                <h1 class="player-rating"> </h1>
+            <div class="lower-footer">
+                <div class="player-detail-box">
+                    <h1 class="player-name">Player Name</h1>
+                </div>
+
+                <div class="player-rating-box">
+                    <h1 class="player-rating"> </h1>
+                </div>
             </div>
         </div>
     </footer>
